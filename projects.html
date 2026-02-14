@@ -94,6 +94,52 @@
         </div>
       </div>
 
+      <div class="project-card featured" data-category="research">
+        <div class="project-header">
+          <h3>🧫 High-Confidence Genome Annotation and Comparative Validation of the Plant Pathogen <em>Phytophthora capsici</em></h3>
+          <div class="project-meta">
+            <span class="project-status ongoing">Ongoing</span>
+            <span class="project-date">2025 - Present</span>
+            <span class="project-type">Chang Lab Research</span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <p><strong>Overview:</strong> This project produces and validates a high-confidence genome resource for <em>Phytophthora capsici</em>, an oomycete plant pathogen responsible for destructive root, crown, and fruit rot across many vegetable crops. Because oomycete genomes can be repeat-rich and heterozygous, and because virulence and effector biology depend on accurate gene models, this work emphasizes biological correctness using multiple orthogonal validation steps rather than relying on a single completeness metric.</p>
+
+          <p><strong>Why <em>P. capsici</em> matters:</strong> Genome-scale conclusions about pathogenicity, including effector repertoire, gene family expansion, and structural variation, are only as reliable as the assembly and annotation. In <em>Phytophthora</em>, assembly artifacts (collapsed repeats, duplicated haplotigs) and annotation artifacts (fragmented or fused genes, inflated gene counts) can produce misleading biological interpretations. This project prioritizes quality control and validation so downstream inferences reflect biology, not technical artifacts.</p>
+
+          <div class="project-highlights">
+            <h4>Analyses &amp; significance:</h4>
+            <ul>
+              <li><strong>QUAST (assembly QC):</strong> Evaluates contiguity and potential structural issues, including fragmentation or suspicious patterns consistent with misassembly, to establish whether the assembly is structurally suitable for gene prediction and comparative analysis.</li>
+              <li><strong>Tapestry (assembly integrity and haplotig signals):</strong> Visualizes long-read assembly structure to diagnose duplicated haplotype content or problematic regions (for example, unpurged heterozygosity), which can inflate gene counts and create false expansions.</li>
+              <li><strong>BUSCO - assembly mode:</strong> Measures conserved gene-space completeness in the genome sequence itself to distinguish missing biology from downstream annotation problems.</li>
+              <li><strong>BUSCO - protein mode:</strong> Evaluates predicted proteins for completeness, catching failure modes where conserved genes exist in DNA but were missed, fragmented, or incorrectly modeled in protein predictions.</li>
+              <li><strong>NF-PGA (gene prediction standardization):</strong> Runs a reproducible gene prediction workflow with consistent settings, improving comparability and reducing manual or parameter-driven bias between versions.</li>
+              <li><strong>AGAT (GFF/GTF cleanup and validation):</strong> Repairs structural annotation issues, including invalid gene models and formatting inconsistencies, to ensure compatibility with downstream tools and accurate interpretation of CDS/exon structure.</li>
+              <li><strong>OMArk (annotation plausibility via orthology):</strong> Uses orthology-based validation to detect fragmented genes, fused genes, and suspicious duplications, complementing BUSCO by testing whether the annotation makes evolutionary sense.</li>
+              <li><strong>MitoHiFi (mitochondrial assembly):</strong> Reconstructs the mitochondrial genome for species confirmation, contamination checks, and phylogeny/population tracking, adding an independent validation axis separate from the nuclear assembly.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">QUAST</span>
+            <span class="tech-tag">Tapestry</span>
+            <span class="tech-tag">BUSCO</span>
+            <span class="tech-tag">NF-PGA</span>
+            <span class="tech-tag">AGAT</span>
+            <span class="tech-tag">OMArk</span>
+            <span class="tech-tag">MitoHiFi</span>
+            <span class="tech-tag">Comparative Genomics</span>
+          </div>
+
+          <div class="project-outcomes">
+            <strong>Outcome:</strong> Deliverables include a validated assembly and annotation set suitable for pathogenicity and effector biology studies, with reduced risk of inflated gene catalogs and misleading comparative signals.
+          </div>
+        </div>
+      </div>
+
       <!-- Technical Projects -->
       <div class="project-card featured" data-category="technical">
         <div class="project-header">
