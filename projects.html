@@ -21,7 +21,7 @@
         <a href="about.html">About Me</a>
         <a href="projects.html" class="active">Projects</a>
         <a href="contact.html">Contact</a>
-        <a href="assets/CWH_Resume_2_14_2026.pdf" class="button-link" type="application/pdf" target="_blank" rel="noopener noreferrer">📄 Resume</a>
+        <a href="assets/resume_charles_hough_2026.pdf" class="button-link" type="application/pdf" download="resume_charles_hough_2026.pdf" target="_blank" rel="noopener noreferrer">📄 Resume</a>
       </nav>
     </div>
   </header>
@@ -29,7 +29,7 @@
   <main class="container">
     <div class="projects-header">
       <h2>Projects & Work</h2>
-      <p class="projects-subtitle">A collection of my computational implementations, research contributions, and personal achievements. Each entry includes specific examples and outcomes where available.</p>
+      <p class="projects-subtitle">A collection of research projects, computational implementations, and leadership contributions with clear methods, scale, and outcomes.</p>
     </div>
     
     <!-- Project Filters -->
@@ -54,26 +54,26 @@
         </div>
         
         <div class="project-content">
-          <p><strong>Project Scope:</strong> Assisting bioinformatics analysis for a large-scale departmental Phytophthora genomics project, processing 108 oomycete isolates with primary, hap1, and hap2 genome assemblies to generate comprehensive synteny comparisons and evolutionary insights.</p>
+          <p><strong>Project Scope:</strong> Developed and implemented comparative genomics workflows for 108 oomycete isolates (324 assemblies across primary, hap1, and hap2 genomes) to generate synteny maps and comparative evolutionary insights at scale.</p>
           
           <div class="project-highlights">
             <h4>Technical Implementation:</h4>
             <ul>
-              <li><strong>Genome Processing:</strong> Managing 324 total assemblies (108 × 3 haplotypes) with decontaminated FASTA files and Helixer ML annotations</li>
-              <li><strong>Automated Workflows:</strong> Developed SLURM-based pipeline using AGAT for GFF3-to-CDS conversion across all isolates</li>
-              <li><strong>Synteny Analysis:</strong> Implementing GENESPACE comparisons for 6 comparison types per isolate (1,944 total analyses)</li>
-              <li><strong>HPC Management:</strong> Orchestrating computational workflows on OSU's CQLS cluster with Singularity containers</li>
-              <li><strong>Data Architecture:</strong> Designed hierarchical directory structure for organized output management</li>
+              <li><strong>Genome Processing:</strong> Managed 324 decontaminated assemblies and standardized annotation inputs for downstream analysis.</li>
+              <li><strong>Automated Workflows:</strong> Designed SLURM-based pipelines for batch AGAT processing and reproducible genome feature extraction.</li>
+              <li><strong>Comparative Analysis:</strong> Implemented GENESPACE, MUMmer, and nf-core-based comparisons for synteny and structural genome evaluation.</li>
+              <li><strong>HPC Management:</strong> Orchestrated containerized workflows on OSU's CQLS cluster with Singularity and array-job scheduling.</li>
+              <li><strong>Data Architecture:</strong> Built structured output directories for cross-isolate comparison tracking and downstream interpretation.</li>
             </ul>
           </div>
 
           <div class="project-highlights">
             <h4>Key Workflow Components:</h4>
             <ul>
-              <li><strong>Step 1:</strong> Batch CDS extraction using <code>agat_sp_extract_sequences.pl</code> with quality filtering</li>
-              <li><strong>Step 2:</strong> Automated R script generation for GENESPACE comparative analyses</li>
-              <li><strong>Step 3:</strong> Synteny plotting for primary vs hap1/hap2, haplotype comparisons, and self-comparisons</li>
-              <li>Developed bash scripts for array job submission managing 648 comparison scripts</li>
+              <li><strong>Step 1:</strong> Batched CDS extraction with <code>agat_sp_extract_sequences.pl</code> and quality-controlled reference inputs.</li>
+              <li><strong>Step 2:</strong> Generated automated analysis scripts for GENESPACE and nf-core comparative workflows.</li>
+              <li><strong>Step 3:</strong> Produced MUMmer- and GENESPACE-based synteny outputs for primary vs haplotype and within-isolate comparisons.</li>
+              <li>Implemented bash utilities for large array-job submissions spanning hundreds of comparative analyses.</li>
             </ul>
           </div>
           
@@ -89,7 +89,7 @@
           </div>
           
           <div class="project-outcomes">
-            <strong>Impact:</strong> Developing scalable bioinformatics infrastructure for comparative genomics, contributing to understanding of oomycete genome evolution and pathogen diversity
+            <strong>Impact:</strong> Delivered scalable comparative genomics infrastructure that supports high-throughput interpretation of genome architecture, synteny, and pathogen diversity across 100+ genomes.
           </div>
         </div>
       </div>
@@ -136,6 +136,44 @@
 
           <div class="project-outcomes">
             <strong>Outcome:</strong> Deliverables include a validated assembly and annotation set suitable for pathogenicity and effector biology studies, with reduced risk of inflated gene catalogs and misleading comparative signals.
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured" data-category="research">
+        <div class="project-header">
+          <h3>🧪 PCR-Based Microbial Identification Workflow for Consortium Research</h3>
+          <div class="project-meta">
+            <span class="project-status ongoing">Ongoing</span>
+            <span class="project-date">2025 - Present</span>
+            <span class="project-type">Halsey Lab Research</span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <p><strong>Project Scope:</strong> Designed and executed a molecular workflow for organism identification in biofuel-related microbial consortia, including two algal species, <em>Bacillus pumilus</em>, and associated contaminants.</p>
+
+          <div class="project-highlights">
+            <h4>Technical Implementation:</h4>
+            <ul>
+              <li><strong>Workflow Design:</strong> Built an end-to-end 16S rRNA PCR pipeline from DNA extraction through sequencing submission.</li>
+              <li><strong>Molecular Execution:</strong> Performed DNA extraction, PCR amplification, and gel electrophoresis to validate successful amplicons.</li>
+              <li><strong>Experimental Design:</strong> Supported microbial culturing and designed assays for organism-level identification within mixed cultures.</li>
+              <li><strong>Analytical Outcome:</strong> Generated sequencing-ready products used to identify contaminating organisms and improve consortium interpretation.</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-tag">PCR</span>
+            <span class="tech-tag">16S rRNA</span>
+            <span class="tech-tag">DNA Extraction</span>
+            <span class="tech-tag">Gel Electrophoresis</span>
+            <span class="tech-tag">Microbial Culturing</span>
+            <span class="tech-tag">Experimental Design</span>
+          </div>
+
+          <div class="project-outcomes">
+            <strong>Impact:</strong> Produced a repeatable molecular identification workflow that strengthens microbial consortium characterization and supports biofuel-focused experimental decision-making.
           </div>
         </div>
       </div>
